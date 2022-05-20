@@ -1,0 +1,49 @@
+﻿<ac:WindowBase x:Class="AIStudio.Wpf.Controls.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIStudio.Wpf.Controls.App"
+        xmlns:dragablzDemo="clr-namespace:AIStudio.Wpf.DragablzControls.Demo;assembly=AIStudio.Wpf.DragablzControls.Demo"
+        xmlns:ac="https://gitee.com/akwkevin/aistudio.-wpf.-controls"
+        mc:Ignorable="d"
+        Title="AIStudio.Wpf" Height="450" Width="800"
+        Identifier="RootWindow"
+        Icon="A.ico" 
+        Style="{DynamicResource AIStudio.Styles.WindowBase}">
+    <Grid>
+        <ac:WindowBaseTitleBar>
+            <ac:WindowBaseTitleBar.LeftWindowCommands>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="." VerticalAlignment="Center" Foreground="{DynamicResource MahApps.Brushes.ThemeBackground}" />
+                    <ComboBox x:Name="comboBox" 
+                              SelectedIndex="0" 
+                              Background="Transparent" 
+                              Foreground="{DynamicResource MahApps.Brushes.ThemeBackground}" 
+                              Style="{DynamicResource AIStudio.Styles.ComboBox.Underline}" 
+                              Padding="0">
+                        <ComboBoxItem Content="Dragablz"/>
+                    </ComboBox>                   
+                </StackPanel>
+            </ac:WindowBaseTitleBar.LeftWindowCommands>
+        </ac:WindowBaseTitleBar>
+        <Control x:Name="control">
+            <Control.Style>
+                <Style TargetType="Control">
+                    <Style.Triggers>                       
+                        <DataTrigger Binding="{Binding Text,ElementName=comboBox, Mode=OneWay}" Value="Dragablz">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Control">
+                                        <dragablzDemo:MainView/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>                       
+                    </Style.Triggers>
+                </Style>
+            </Control.Style>
+        </Control>
+
+    </Grid>
+</ac:WindowBase>
