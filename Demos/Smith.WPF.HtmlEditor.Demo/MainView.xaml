@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Smith.WPF.HtmlEditor.Demo.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:ex="clr-namespace:Smith.WPF.HtmlEditor;assembly=Smith.WPF.HtmlEditor"        
+        mc:Ignorable="d" 
+        d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Padding"
+                    Value="0" />
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalContentAlignment"
+                    Value="Center" />
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Padding"
+                    Value="4,2" />
+        </Style>
+    </UserControl.Resources>
+    <DockPanel>
+        <Border DockPanel.Dock="Bottom"
+                BorderBrush="#FFC5C5C5"
+                BorderThickness="0,1,0,0"
+                Padding="8">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+                    <Button x:Name="BindingTestButton"
+                            Content="Binding Test"
+                            Margin="8,0" />
+                    <Button x:Name="GetHtmlButton"
+                            Content="获取Html"
+                            Margin="8,0" />
+                    <Button x:Name="GetTextButton"
+                            Content="获取纯文本"
+                            Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="字数统计：" />
+                    <Label x:Name="WordCountText"
+                           Content="0" />
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        <ex:HtmlEditor x:Name="Editor" />
+    </DockPanel>
+</UserControl>

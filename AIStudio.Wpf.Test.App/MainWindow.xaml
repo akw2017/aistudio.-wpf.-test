@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AIStudio.Wpf.Controls.App"
         xmlns:dragablzDemo="clr-namespace:AIStudio.Wpf.DragablzControls.Demo;assembly=AIStudio.Wpf.DragablzControls.Demo"
+        xmlns:htmleditorDemo="clr-namespace:Smith.WPF.HtmlEditor.Demo;assembly=Smith.WPF.HtmlEditor.Demo"
         xmlns:ac="https://gitee.com/akwkevin/aistudio.-wpf.-controls"
         mc:Ignorable="d"
         Title="AIStudio.Wpf" Height="450" Width="800"
@@ -23,14 +24,15 @@
                               Style="{DynamicResource AIStudio.Styles.ComboBox.Underline}" 
                               Padding="0">
                         <ComboBoxItem Content="Dragablz"/>
-                    </ComboBox>                   
+                        <ComboBoxItem Content="HtmlEditor"/>
+                    </ComboBox>
                 </StackPanel>
             </ac:WindowBaseTitleBar.LeftWindowCommands>
         </ac:WindowBaseTitleBar>
         <Control x:Name="control">
             <Control.Style>
                 <Style TargetType="Control">
-                    <Style.Triggers>                       
+                    <Style.Triggers>
                         <DataTrigger Binding="{Binding Text,ElementName=comboBox, Mode=OneWay}" Value="Dragablz">
                             <Setter Property="Template">
                                 <Setter.Value>
@@ -39,7 +41,16 @@
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
-                        </DataTrigger>                       
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text,ElementName=comboBox, Mode=OneWay}" Value="HtmlEditor">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Control">
+                                        <htmleditorDemo:MainView/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </Control.Style>
