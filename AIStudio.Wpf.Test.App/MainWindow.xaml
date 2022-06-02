@@ -7,6 +7,7 @@
         xmlns:dragablzDemo="clr-namespace:AIStudio.Wpf.DragablzControls.Demo;assembly=AIStudio.Wpf.DragablzControls.Demo"
         xmlns:htmleditorDemo="clr-namespace:Smith.WPF.HtmlEditor.Demo;assembly=Smith.WPF.HtmlEditor.Demo"
         xmlns:svg2XamlDemo="clr-namespace:AIStudio.Wpf.Svg2Xaml.Demo;assembly=AIStudio.Wpf.Svg2Xaml.Demo"
+        xmlns:diagramDemo="clr-namespace:Aga.Diagrams.Demo;assembly=Aga.Diagrams.Demo"
         xmlns:ac="https://gitee.com/akwkevin/aistudio.-wpf.-controls"
         mc:Ignorable="d"
         Title="AIStudio.Wpf" Height="450" Width="800"
@@ -27,6 +28,7 @@
                         <ComboBoxItem Content="Dragablz"/>
                         <ComboBoxItem Content="HtmlEditor"/>
                         <ComboBoxItem Content="Svg2Xaml"/>
+                        <ComboBoxItem Content="Diagram"/>
                     </ComboBox>
                 </StackPanel>
             </ac:WindowBaseTitleBar.LeftWindowCommands>
@@ -58,6 +60,15 @@
                                 <Setter.Value>
                                     <ControlTemplate TargetType="Control">
                                         <svg2XamlDemo:MainView/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text,ElementName=comboBox, Mode=OneWay}" Value="Diagram">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Control">
+                                        <diagramDemo:MainView/>
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>

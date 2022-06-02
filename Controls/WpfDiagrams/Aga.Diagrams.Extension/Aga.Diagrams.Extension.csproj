@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+    <Version>1.2.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aga.Diagrams\Aga.Diagrams.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Flowchart\FlowchartEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Flowchart\OAFlowEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="PropertiesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ShapesExample\ShapesEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\FlowNode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

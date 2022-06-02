@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+    <Version>1.2.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="themes\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\DiagramView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\EllipsePort.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\LinkBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\Node.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\RectPort.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\RelinkControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\SelectionFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="themes\Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controls\WpfDiagrams\Aga.Diagrams.Extension\Aga.Diagrams.Extension.csproj" />
+  </ItemGroup>
+
+</Project>
