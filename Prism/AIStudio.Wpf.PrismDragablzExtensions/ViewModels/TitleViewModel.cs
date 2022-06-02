@@ -5,6 +5,7 @@ namespace AIStudio.Wpf.PrismDragablzExtensions.ViewModels
 {
     public class TitleViewModel : BindableBase, IDisposable
     {
+
         #region Properties
         #region CanClose
         private bool _CanClose;
