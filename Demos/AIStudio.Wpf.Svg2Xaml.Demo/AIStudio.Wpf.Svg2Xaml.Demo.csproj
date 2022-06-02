@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controls\AIStudio.Wpf.Svg2XamlExtension\AIStudio.Wpf.Svg2XamlExtension.csproj" />
+  </ItemGroup>
+
+</Project>

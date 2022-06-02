@@ -32,48 +32,49 @@ using System.Xml.Linq;
 
 namespace Svg2Xaml
 {
-  using System.Windows.Markup;
+    using System.Windows.Markup;
 
-  //****************************************************************************
-  sealed class SvgDocument
-  {
-    //==========================================================================
-    public readonly Dictionary<string, SvgBaseElement> Elements = new Dictionary<string,SvgBaseElement>();
-
-    //==========================================================================
-    public readonly SvgSVGElement    Root;
-    public readonly SvgReaderOptions Options;
-    public readonly IDictionary<string, IDictionary<string, string>> StyleDictionary;
-
-    //==========================================================================
-    public SvgDocument(XElement root, SvgReaderOptions options)
+    //****************************************************************************
+    sealed class SvgDocument
     {
-      StyleDictionary = new Dictionary<string, IDictionary<string, string>>();
-      Root    = new SvgSVGElement(this, null, root);
-      Options = options;
-    }
+        //==========================================================================
+        public readonly Dictionary<string, SvgBaseElement> Elements = new Dictionary<string, SvgBaseElement>();
 
-    //==========================================================================
-    public DrawingImage Draw()
-    {
-      var drawing = Root.Draw();
-      var drawingImage = new DrawingImage(drawing);
-      //var xamlString = XamlWriter.Save(drawingImage);
-      return drawingImage;
-    }
+        //==========================================================================
+        public readonly SvgSVGElement Root;
+        public readonly SvgReaderOptions Options;
+        public readonly IDictionary<string, IDictionary<string, string>> StyleDictionary;
 
-    public IDictionary<string, string> GetStylesForClass(string className)
-    {
-      IDictionary<string, string> result;
-      if (!this.StyleDictionary.TryGetValue(className, out result))
-      {
-        result = new Dictionary<string, string>();
-        this.StyleDictionary.Add(className, result);
-      }
+        //==========================================================================
+        public SvgDocument(XElement root, SvgReaderOptions options)
+        {
+            StyleDictionary = new Dictionary<string, IDictionary<string, string>>();
+            Options = options;//先读配置文件，利用配置文件进行注入，AIStudio扩展
+            Root = new SvgSVGElement(this, null, root);
 
-      return result;
-    }
+        }
 
-  } // class SvgDocument
+        //==========================================================================
+        public DrawingImage Draw()
+        {
+            var drawing = Root.Draw();
+            var drawingImage = new DrawingImage(drawing);
+            //var xamlString = XamlWriter.Save(drawingImage);
+            return drawingImage;
+        }
+
+        public IDictionary<string, string> GetStylesForClass(string className)
+        {
+            IDictionary<string, string> result;
+            if (!this.StyleDictionary.TryGetValue(className, out result))
+            {
+                result = new Dictionary<string, string>();
+                this.StyleDictionary.Add(className, result);
+            }
+
+            return result;
+        }
+
+    } // class SvgDocument
 
 }

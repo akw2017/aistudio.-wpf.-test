@@ -21,15 +21,6 @@ namespace AIStudio.Wpf.Svg2XamlExtension
 
         public PackSvg()
         {
-            //读取资源字典文件
-            ResourceDictionary rd = new ResourceDictionary();
-            rd.Source = new Uri("/AIStudio.Wpf.Svg2XamlExtension;component/Control/PackSvg.xaml", UriKind.Relative);
-            if (!this.Resources.MergedDictionaries.Any(p => p.Source == rd.Source))
-            {
-                this.Resources.MergedDictionaries.Add(rd);
-            }
-            //获取样式
-            this.Style = this.FindResource("DefaultPackSvgStyle") as Style;
 
         }
 

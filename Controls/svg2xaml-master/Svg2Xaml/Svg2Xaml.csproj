@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <ProductVersion>9.0.21022</ProductVersion>
-    <TargetFrameworks>net40;netcoreapp3.1</TargetFrameworks>
+
+    
     <UseWPF>true</UseWPF>
     <OutputType>Library</OutputType>
     <FileUpgradeFlags />
