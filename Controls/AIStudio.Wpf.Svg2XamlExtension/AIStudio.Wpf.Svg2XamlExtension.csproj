@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <UseWPF>true</UseWPF>
+    <Version>1.2.2</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\svg2xaml-master\Svg2Xaml\Svg2Xaml.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Update="svg\A.svg">
