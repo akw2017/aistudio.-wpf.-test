@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:svg2xaml="clr-namespace:Svg2Xaml;assembly=Svg2Xaml"
+             xmlns:svg2xaml="clr-namespace:Svg2Xaml;assembly=AIStudio.Wpf.Svg2XamlExtension"
              xmlns:svg="https://gitee.com/akwkevin/aistudio.-wpf.-test/tree/master/Controls/AIStudio.Wpf.Svg2XamlExtension"
              xmlns:local="clr-namespace:AIStudio.Wpf.Svg2Xaml.Demo"
              mc:Ignorable="d" 

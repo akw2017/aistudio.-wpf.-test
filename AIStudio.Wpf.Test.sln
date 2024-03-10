@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{3D54C8D2-F15E-4BD8-8579-904AF5D4A5E7}"
 EndProject
@@ -55,7 +55,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Svg2Xaml", "Svg2Xaml", "{4E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dragablz", "Dragablz", "{9DFE47AA-12EE-4AC3-8A1E-5CF09C82EC7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aga.Diagrams.Demo", "Demos\Aga.Diagrams.Demo\Aga.Diagrams.Demo.csproj", "{4398E66A-AAB3-4893-A523-C2651466F1C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aga.Diagrams.Demo", "Demos\Aga.Diagrams.Demo\Aga.Diagrams.Demo.csproj", "{4398E66A-AAB3-4893-A523-C2651466F1C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dirkster99_AvalonDock", "Dirkster99_AvalonDock", "{6A7CCF0C-009D-40E7-84EC-4BE35E205729}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock", "Controls\AvalonDock-master\source\Components\AvalonDock\AvalonDock.csproj", "{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Aero", "Controls\AvalonDock-master\source\Components\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.csproj", "{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Expression", "Controls\AvalonDock-master\source\Components\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.csproj", "{8B3D0DA6-F553-49D0-A409-34C8A6427E03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.Metro", "Controls\AvalonDock-master\source\Components\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.csproj", "{FD1549A2-7ABD-4C43-8E55-82A77385D32D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.VS2010", "Controls\AvalonDock-master\source\Components\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.csproj", "{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvalonDock.Themes.VS2013", "Controls\AvalonDock-master\source\Components\AvalonDock.Themes.VS2013\AvalonDock.Themes.VS2013.csproj", "{B74C2F77-6960-4224-9340-F9D62B7A05B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AIStudio.Wpf.PrismDirster99AvalonExtensions", "Prism\AIStudio.Wpf.PrismDirster99AvalonExtensions\AIStudio.Wpf.PrismDirster99AvalonExtensions.csproj", "{F59B4C55-4E48-4118-86FC-2256E974CB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIStudio.Wpf.PrismDirster99Avalon.Demo", "Demos\AIStudio.Wpf.PrismDirster99Avalon.Demo\AIStudio.Wpf.PrismDirster99Avalon.Demo.csproj", "{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +149,38 @@ Global
 		{4398E66A-AAB3-4893-A523-C2651466F1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4398E66A-AAB3-4893-A523-C2651466F1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4398E66A-AAB3-4893-A523-C2651466F1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3D0DA6-F553-49D0-A409-34C8A6427E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3D0DA6-F553-49D0-A409-34C8A6427E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3D0DA6-F553-49D0-A409-34C8A6427E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3D0DA6-F553-49D0-A409-34C8A6427E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1549A2-7ABD-4C43-8E55-82A77385D32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1549A2-7ABD-4C43-8E55-82A77385D32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1549A2-7ABD-4C43-8E55-82A77385D32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1549A2-7ABD-4C43-8E55-82A77385D32D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74C2F77-6960-4224-9340-F9D62B7A05B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74C2F77-6960-4224-9340-F9D62B7A05B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74C2F77-6960-4224-9340-F9D62B7A05B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74C2F77-6960-4224-9340-F9D62B7A05B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59B4C55-4E48-4118-86FC-2256E974CB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59B4C55-4E48-4118-86FC-2256E974CB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59B4C55-4E48-4118-86FC-2256E974CB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59B4C55-4E48-4118-86FC-2256E974CB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +204,15 @@ Global
 		{4EC6C1AB-24BE-4694-AF41-9BAB20ED0587} = {3D54C8D2-F15E-4BD8-8579-904AF5D4A5E7}
 		{9DFE47AA-12EE-4AC3-8A1E-5CF09C82EC7E} = {3D54C8D2-F15E-4BD8-8579-904AF5D4A5E7}
 		{4398E66A-AAB3-4893-A523-C2651466F1C0} = {72A4E17E-1F5A-4324-9492-2CD44BEE3855}
+		{6A7CCF0C-009D-40E7-84EC-4BE35E205729} = {3D54C8D2-F15E-4BD8-8579-904AF5D4A5E7}
+		{99B8FF46-A3C9-436E-8311-EF4D7D2BF6AF} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{D9A8A4A5-D47F-4557-8A4B-31CEDED2A669} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{8B3D0DA6-F553-49D0-A409-34C8A6427E03} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{FD1549A2-7ABD-4C43-8E55-82A77385D32D} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{53F34A0C-9DF1-45F9-A6C2-EA0BA2D46C0C} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{B74C2F77-6960-4224-9340-F9D62B7A05B0} = {6A7CCF0C-009D-40E7-84EC-4BE35E205729}
+		{F59B4C55-4E48-4118-86FC-2256E974CB09} = {4883F24B-E5CF-4789-A4E1-2F27C6673239}
+		{7212E3BF-6EC3-4BC5-92D2-5D6A1D63EAE5} = {72A4E17E-1F5A-4324-9492-2CD44BEE3855}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38918B9E-D567-458D-8EE0-3A82F3D0C27F}

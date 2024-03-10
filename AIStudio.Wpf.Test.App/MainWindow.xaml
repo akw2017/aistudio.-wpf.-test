@@ -26,7 +26,6 @@
                               Style="{DynamicResource AIStudio.Styles.ComboBox.Underline}" 
                               Padding="0">
                         <ComboBoxItem Content="Dragablz"/>
-                        <ComboBoxItem Content="HtmlEditor"/>
                         <ComboBoxItem Content="Svg2Xaml"/>
                         <ComboBoxItem Content="Diagram"/>
                     </ComboBox>

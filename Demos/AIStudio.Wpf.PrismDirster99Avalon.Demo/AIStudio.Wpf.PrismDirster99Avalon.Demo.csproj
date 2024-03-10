@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controls\AvalonDock-master\source\Components\AvalonDock\AvalonDock.csproj" />
+    <ProjectReference Include="..\..\Prism\AIStudio.Wpf.PrismDirster99AvalonExtensions\AIStudio.Wpf.PrismDirster99AvalonExtensions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="WpfAnalyzers" Version="4.1.0" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+
+</Project>
